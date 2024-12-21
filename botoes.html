@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        p { padding-top: 50px; text-align: center; color: bisque;}
+        #dropdown { text-align: center; margin-top: 10px;}
+        body { background-color: #272822;}
+        #azulclaro { background-color:  lightblue;}
+        h2 { color: #D82757; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; padding-top: 15px;}
+        a { text-decoration: none; }
+
+
+    </style>
+</head>
+<body>
+
+
+    <button type="button" id="tema" class="btn btn-outline-secondary mt-2" style="position: absolute; margin-left: 10px;" onclick="tema()"> 🔘 Tema branco </button>
+
+    <h2> Oie! 😜 </h5>
+<div class="container-fluid">
+    <div class="d-grid"> <!-- hobbies -->
+        <a target="_blank" href="hobbies.html" type="button" class="btn btn-outline-primary btn-block mb-3"> Veja meus hobbies clicando aqui </a>
+    </div>
+
+    <div class="d-grid"> <!-- Botões ativos e desativados -->
+        <button type="button" class="btn btn-primary active"> botão ativado </button>
+        <a href="#" type="button" class="btn btn-primary btn-disabled  mt-3"> link desativado manutenção </a>
+        <button type="button" class="btn btn-primary mt-3" disabled> Incrição (finalizado) </button>
+    </div>
+
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+
+    <div class="col-3 dropdown" id="dropdown"> <!-- páginas  -->
+        <button type="button" id="azulclaro" onclick="alertt()" id="naum" class="btn dropdown-toggle" data-bs-toggle="dropdown" width="auto"> Páginas </button>
+        <ul class="dropdown-menu"> <!-- lista para as opcoes -->
+            <li><a target="_blank" class="dropdown-item disabled" href="home.html"> Home </a> </li>
+            <li><a target="_blank" class="dropdown-item disabled" href="novasexcursoes.html"> Novas excursões </a> </li>
+            <li><a target="_blank" class="dropdown-item disabled" href="finalizacao.html"> Finalização </a> </li>
+        </ul>
+    </div>
+
+
+    <div class="col-3 dropdown" id="dropdown"> <!-- coloca uma linha pra dividir -->
+        <button type="button" id="azulclaro" class="btn dropdown-toggle" data-bs-toggle="dropdown"> Olimpíadas </button>
+        <ul class="dropdown-menu">  <!-- lista para as opcoes -->
+        <li><a  target="_blank" class="dorpdown-item" href="https://matematicasemfronteiras.org/inscricoes.html">Sem fronteiras</a></li>
+        <li><a target="_blank" class="dorpdown-item" href="https://medalhei.com/olimpiada/amo/">Medalhei</a></li>
+
+            <li><hr class="dropdown-divider"></hr></li> <!-- coloca uma linha pra dividir -->
+        <li><a target="_blank" class="dropdown-item" href="#">Olimpíada de Matemática GEPEMAC/IFCE </a></li>
+        <li><a target="_blank" class="dropdown-item" href="https://podemos.mat.br/olimpiadas-regionais-de-matematica" >Torneio de Matemática Manchester Paulista </a></li>
+        <li><a target="_blank" class="dropdown-item" href="https://matematicopordiversao.wordpress.com/2a-olimpiada-matematicos-por-diversao-ompd-2021/">Olimpíada Matemáticos por Diversão (OMpD) </a></li>
+        <li><a target="_blank" class="dropdown-item" href="https://www.ligmat.com/">Liga de Matemática</a></li>
+        <li><a target="_blank" class="dropdown-item" href="https://www.cangurudematematicabrasil.com.br/concurso/inscricoes.html">Canguru </a></li>
+        <li><a target="_blank" class="dropdown-item" href="https://www.tm2.org.br/">Torneio de Matemática para meninas </a></li>
+        <li><a target="_blank" class="dropdown-item" href="https://noic.com.br/obo/matematica/regulamento-obom/">Olimpíada Brasileira Online</a></li>
+               
+        </ul>
+    </div>
+
+        <div class="col-3 dropdown" id="dropdown"> <!-- coloca um cabeçalho suspenso -->
+            <button type="button" id="azulclaro" class="btn dropdown-toggle" data-bs-toggle="dropdown"> Cabeçalho </button>
+            <div class="dropdown-menu">  <!-- div para as opcoes -->
+                <li><h5 class="dropdown-header"> Cabeçalho do menu suspenso </h5></li>
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+                <li><h5 class="dropdown-header"> Cabeçalho do menu suspenso </h5></li>
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+            </div>
+        </div>
+
+        <div class="col-3 dropdown dropstart" id="dropdown">
+            <button type="button" id="azulclaro" class="btn dropdown-toggle" data-bs-toggle="dropdown"> Dropend </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+            </ul>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<script>
+    function alertt() {
+        alert('Os links estão temporariamente desativados')
+    }
+
+                
+var num = 0; //preto
+document.body.style.color = 'beige'; // Texto preto
+function tema() {
+    var botao = document.getElementById('tema');
+    num += 1;
+
+    if (num % 2 == 0) {
+        botao.innerHTML = '🔘 Tema claro';
+        document.body.style.backgroundColor = '#272822'; // Cor de fundo branca
+        document.body.style.color = 'beige'; // Texto preto
+    } else {
+        botao.innerHTML = '🔘 Tema escuro';
+        document.body.style.backgroundColor = 'white'; // Cor de fundo escura
+        document.body.style.color = 'black'; // Texto branco
+    }
+}
+</script>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus hobbies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+
+p, h1, body {text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+#escrita { padding: 7px;}
+#botao { width: 25%;}
+#botao:hover { color: beige;}
+
+
+       /* .card {box-shadow: -2px -3px 5px rgba(0,0,0, 0.4);}*/
+        
+    </style>
+</head>
+<button type="button" id="tema" class="btn btn-outline-secondary" style="position: absolute; left:10px; margin-top: 10px;" onclick="alternarTema()">🔘 Tema escuro</button>
+
+<body>
+
+    <div class="container-fluid fixed-top m-0" style="font-size: 30px; font-weight: bold; background-color: rebeccapurple; color:beige;">   Meus hobbies :)) </div>
+
+    <div class="row mt-5 p-0 m-0 justify-content-center">
+        <div class="col-8 mt-3 mb-3">
+        <p>Olá, neste código serão utilizados recursos do Bootstrap: container, row e colunas (grid system).</p>
+        <p> Seja bem vindo aos hobbies da Gabyy</p>
+        </div>
+    </div>
+    <div class="col-8"></div>
+
+
+            <div class="container">
+        <div class="row">
+            <p style="color: plum; font-family: cursive; text-align: end;">Hobbies</p>
+        </div>
+    </div>
+    <div class="container-fluid custom-container">
+        <div class="row justify-content-center"> <!-- escrita hobbies-->
+            <div id="escrita" class="col-2 h-3" style="margin-right: 10px;">Tocar piano</div>
+            <div id="escrita" class="col-2" style="margin-right: 10px;">Cantar</div>
+            <div id="escrita" class="col-2" style="margin-right: 10px;">Jogar volei</div>
+            <div id="escrita" class="col-2" style="margin-right: 10px;">Assitir</div>
+            <div id="escrita" class="col-2" style="margin-right: 10px;">Conversar</div>
+
+        </div>
+        <div class="row justify-content-center"> <!-- fotos hobbies -->
+            <img src="imagens_hobbies/piano.jpg" class="col-2 p-0"  alt="pessoa tocando piano" style="margin-right: 10px; border-radius: 10px; box-shadow: 1px 1px 4px plum;">
+            <img src="imagens_hobbies/mic.jpg" class="col-2 p-0" alt="mic" style="margin-right: 10px; border-radius: 10px; box-shadow: 1px 1px 4px plum;"> 
+            <img src="imagens_hobbies/volei.jpg" class="col-2 p-0" alt="volei na praia" style="margin-right: 10px; border-radius: 10px; box-shadow: 1px 1px 5px plum;">
+            <img src="imagens_hobbies/assitir1.jpg" class="col-2 p-0" alt="assistindo netflix" style="margin-right: 10px; border-radius: 10px; box-shadow: 1px 1px 5px plum;"> 
+            <img src="imagens_hobbies/63 Fun Questions to Get Your Kid Talking.jpg" class="col-2 p-0" alt="assistindo netflix" style="margin-right: 10px;border-radius: 10px; box-shadow: 1px 1px 4px plum;"> 
+
+        </div>
+        <p></p>
+    </div> 
+
+
+
+    <div class="container mt-3"> <!-- nav_dinamicas -->
+        <br>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs justify-content-center" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#home" style="color: plum;">Cards </a> <!-- botao 1 -->
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="verde_claro" data-bs-toggle="tab" style="color: plum;" href="#menu1">Carrossel</a>
+            </li>
+        </ul>
+        <!-- Opções da tab -->
+        <div class="tab-content">
+
+        <div id="home" class="container tab-pane active">
+            <br>
+        <h3>O kiridinho do site haha</h3>
+<div class="container d-flex justify-content-center mb-3"> <!-- cards -->
+        <div class="row"> <!-- cards -->
+        <div class="card p-0 col-3" style="width: 200px; text-align: left; height: 280px; margin-right: 40px;"><!-- noite estrelada -->
+            <img class="card-img-top" src="imagens_hobbies/noite_estrelada.png" style="width: 199px; ">
+            <div class="card-body" >
+                <h4 class="card-title pt-3"> Pretty </h4>
+                <p class="crad-text p-0" style="text-align: left; font-size: 12px;"> Do you also like this picture? </p>
+                <button id="button_see" onclick="bom_gosto()" class="btn btn-primary"> Yesss! </a>
+            </div></div>
+
+        <div class="card p-0 col-3" style="width: 200px; text-align: left;  height: 280px; margin-right: 40px;"> <!-- musics -->
+            <img class="card-img-top" src="imagens_hobbies/PIANAO.jpg" style="width: 199px; ">
+            <div class="card-img-overlay">
+                <h4 class="card-title pt-3 text-white" style="margin-top: 111px"> Musics </h4>
+                <p class="p-0 text-white" style="text-align: left; font-size: 12px;"> 2º semestre não é moleza!! Bora </p>
+                <div class="dropdown dropup">
+                <button type="button" id="button_see" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> See it now </button>
+                    <ul class="dropdown-menu">
+                        <li><h5 class="dropdown-header" style="color: #5F0E66; background-color:whitesmoke;"> Peças </h5></li>
+                        <li><span class="dropdown-item-text" > »House of memories </span></li>
+                        <li><span class="dropdown-item-text" > »Doce quixa </span></li>
+                        <li><span class="dropdown-item-text" > »Criança Brincando </span></li>
+                        <li><span class="dropdown-item-text" > »Beduíno </span></li>
+                        <li><span class="dropdown-item-text" > »Bach </span></li>
+                        <li><span class="dropdown-item-text" > »Canto Siciliano </span></li>
+                        <li><h5 class="dropdown-header" style="color: #5F0E66; background-color:whitesmoke;"> Tecnica </h5></li>
+                        <li><span class="dropdown-item-text" > »Czerny_1-10 </span></li>
+                        <li><span class="dropdown-item-text" > Hannon_1-8 </span></li>
+                        <li><h5 class="dropdown-header" style="color: #5F0E66; background-color:whitesmoke;"> Escalas </h5></li>
+                        <li>
+                            <span class="dropdown-item-text" id="fa_maior" > F </span>
+                            <div id="caixaTextoF" style="display: none; color: cadetblue; text-align: center;">Esq: 5; Dir: 1</div>
+                        </li>
+                        <li>
+                            <span class="dropdown-item-text" id="sib_maior" > Bb </span>
+                            <div id="caixaTextoB" style="display: none; color: cadetblue; text-align: center;">Esq: 3; Dir: 2</div>
+                        </li>
+                        <li>
+                            <span class="dropdown-item-text" id="mib_maior" > Eb </span>
+                            <div id="caixaTextoE" style="display: none; color: cadetblue; text-align: center;">Esq: 3; Dir: 2</div>
+                        </li>
+                        <li>
+                            <span class="dropdown-item-text" id="lab_maior" > Ab </span>
+                            <div id="caixaTextoA" style="display: none; color: cadetblue; text-align: center;">Esq: 3; Dir: 2</div>
+                        </li>
+                        <li>
+                            <span class="dropdown-item-text" id="reb_maior" > Db </span>
+                            <div id="caixaTextoD" style="display: none; color: cadetblue; text-align: center;">Esq: 3; Dir: 2</div>
+                        </li>
+                        <li>
+                            <span class="dropdown-item-text" id="solb_maior" > Gb </span>
+                            <div id="caixaTextoG" style="display: none; color: cadetblue; text-align: center;">Esq: 4; Dir: 2</div>
+                        </li>
+
+                    </ul>
+                
+                </div>
+            </div></div>
+
+        <div class="card p-0 col-3" style="width: 200px; text-align: left; margin-right: 40px;"> <!-- receitinhas  -->
+            <img class="card-img-top" src="imagens_hobbies/Brigadeiro Cake.jpg">
+            <div class="card-img-overlay" >
+                <h4 class="card-title text-white" style="margin-top: 126px"> Receitinhas </h4>
+                <p class="p-0 text-white" style="text-align: left; font-size: 12px;"> Delicie-se nessas maravilhas! Hmmmm </p>
+
+
+                <div class="dropdown">
+                    <button type="button" id="azulclaro" class="btn dropdown-toggle btn-primary" data-bs-toggle="dropdown" width="auto"> See more! </button>
+
+                    <ul class="dropdown-menu"> <!-- lista para as opcoes -->
+                        <li><h5 class="dropdown-header" style="color: #5F0E66;"> Doces </h5></li>
+                        <li><a target="_blank" class="dropdown-item" href="https://www.instagram.com/p/Cw_HZ1oRcdu/"> Bolo de chocolate </a> </li>
+                        <li><a target="_blank" class="dropdown-item" href="https://www.instagram.com/p/Cvmgd-7O3P9/?img_index=1"> Bolo de chocolate recheado </a> </li>
+                        <li><a target="_blank" class="dropdown-item" href="https://www.instagram.com/p/Czi-Qz5r_Ko">Sorvete de Ninho com calda de chocolate</a> </li>
+                        <li><h5 class="dropdown-header" style="color: #5F0E66;"> Salgados </h5></li>
+                        <li><a target="_blank" class="dropdown-item" href="https://www.instagram.com/p/CzcQ3IGr3ZU/"> Salgado recheado </a> </li>
+                        <li><a target="_blank"  class="dropdown-item" href="https://www.instagram.com/p/CusZz4iNr_p/"> Macarrão recheadasso </a> </li>
+                        <li><a target="_blank"  class="dropdown-item" href="https://www.instagram.com/p/CuXGoykRaKj/"> Frango frito </a> </li>
+                        <li><a target="_blank"  class="dropdown-item" href="https://www.instagram.com/p/Cy1j78jPbU1/"> Coxinha </a> </li>
+                        <li><a target="_blank"  class="dropdown-item" href="https://www.instagram.com/p/Cy6o7DhO_a5/?img_index=1"> Torta folhada de frango </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card p-0 col-3" style="width: 200px; text-align: left; height: 280px; "> <!-- compras -->
+            <img class="card-img-top" src="wallpapers.jpg" style="width: 199px; ">
+            <div class="card-img-overlay" >
+                <h4 class="card-title text-grey" style="margin-top: 126px; background-color: antiquewhite; text-align:center; border-radius:  7px;"> Compraaas </h4>
+                <p class="p-0 text-white" style="text-align: left; font-size: 12px;"> Próximos queridinhos hehe! Agora só falta o money </p>
+                <div class="dropdown">
+                    <button type="button" id="azulclaro" class="btn dropdown-toggle btn-primary" data-bs-toggle="dropdown" width="auto"> See more! </button>
+                    <ul class="dropdown-menu"> <!-- lista para as opcoes -->
+                        <li><h5 class="dropdown-header" style="color: #5F0E66;"> Biquínis </h5></li>
+                        <li><a target="_blank" class="dropdown-item" href="https://br.shein.com/SHEIN-Swim-SXY-Ring-Linked-Criss-Cross-Backless-One-Piece-Swimsuit-p-15024142-cat-2193.html?src_identifier=st%3D2%60sc%3Dmaio%20verde%60sr%3D0%60ps%3D1&src_module=search&src_tab_page_id=page_home1700566482143&mallCode=1&imgRatio=3-4"> Maiô verde </a> </li>
+                        <li><a target="_blank" class="dropdown-item" href="https://br.shein.com/SHEIN-Swim-Vcay-Ombre-Bikini-Set-Criss-Cross-Cami-Top-Hipster-Bottom-Cover-Up-Skirt-2-Piece-Bathing-Suit-p-14193605-cat-1866.html?src_identifier=st%3D2%60sc%3Dbiquini%20roxo%60sr%3D0%60ps%3D1&src_module=search&src_tab_page_id=page_search1700566630063&mallCode=1&imgRatio=3-4"> Biquíni colorido (top) </a> </li>
+                        <li><a target="_blank" class="dropdown-item" href="https://br.shein.com/SHEIN-Swim-Basics-Mono-Bikini-Set-Lace-Up-Push-Up-Bra-Top-High-Waist-Bikini-Bottom-Split-Thigh-Skirt-3-Piece-Swimsuit-p-2908749-cat-1866.html?src_identifier=st%3D2%60sc%3Dbiquini%20vermelho%20top%60sr%3D0%60ps%3D1&src_module=search&src_tab_page_id=page_search1700566786690&mallCode=1&imgRatio=3-4"> Biquíni vermelho c/ saída </a> </li>
+                        <li><h5 class="dropdown-header" style="color: #5F0E66;"> Vestidos </h5></li>
+                        <li><a target="_blank" class="dropdown-item" href="https://br.shein.com/SHEIN-VCAY-Cut-Out-Waist-Split-Thigh-Ruffle-Hem-Cami-Dress-p-13787950-cat-1727.html?mallCode=1&imgRatio=3-4"> Preto </a> </li>
+                        <li><a target="_blank"  class="dropdown-item" href="https://br.shein.com/SHEIN-VCAY-Square-Neck-Sleeveless-A-line-Dress-p-10902818-cat-1727.html?mallCode=1&imgRatio=3-4"> Azul </a> </li>
+                        <li><h5 class="dropdown-header" style="color: #5F0E66;"> Formatura </h5></li>
+                        <li><a target="_blank"  class="dropdown-item" href="https://br.shein.com/SHEIN-Belle-Split-Thigh-Sequins-Cami-Dress-p-12132327-cat-8035.html?mallCode=1&imgRatio=3-4"> Vestido </a> </li>
+                        <li><a target="_blank"  class="dropdown-item" href="https://br.shein.com/1set-Micro-Diamond-Cross-Design-Women-Necklace-Set-Shiny-Delicate-Silver-Jewelry-Gift-For-Wedding-Party-Including-Necklace-Bracelet-Earrings-And-Ring-p-26055918-cat-1756.html?mallCode=1&imgRatio=3-4"> Acessórios </a> </li>
+                        <li><a target="_blank"  class="dropdown-item" href="https://br.shein.com/Women-Heeled-Sandals-p-14755023-cat-1751.html?mallCode=2&imgRatio=3-4"> 1. Sandália brilho </a></li>
+                        <li><a target="_blank"  class="dropdown-item" href="https://br.shein.com/Elegant-Black-Ankle-Strap-Sandals-For-Women-Buckle-Decor-Chunky-Heeled-Sandals-p-10656075-cat-1751.html?mallCode=1&imgRatio=3-4"> 2. Sandália preta </a> </li>
+                        <li><a target="_blank"  class="dropdown-item" href="https://www.google.com/search?q=maquiagem+formatura+boca+brilho&sca_esv=584901900&rlz=1C1GCEU_pt-BRBR1043BR1043&tbm=isch&sxsrf=AM9HkKm1NAJy-CHJmhKsXb3IwiYwsP3Gwg:1700761672174&source=lnms&sa=X&ved=2ahUKEwjl1sT61tqCAxXUqpUCHYwbAeYQ_AUoAXoECAEQAw&biw=1536&bih=703&dpr=1.25#imgrc=6u68jy62AQJ41M&imgdii=cLm3sl898_VqwM"> Maquiagem </a> </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <div class="row">
+        <div class="row justify-content-center"> <!-- modal -->
+
+            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#myModal" style="width: 300px;">
+                Nota 2º semestre 🎹
+                </button>
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog "><!-- sequiser deixar o modal ocupando a tela inteira, add: modal-fullscreen -->
+                        <div class="modal-content">
+                            <!-- Cabeçalho Modal -->
+                            <div class="modal-header">
+                                <h4 class="modal-title text-black"> Carta aberta (ou fechada kkkk) </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                
+                        <!-- Corpo Modal -->
+                        <div class="modal-body text-black" style="text-align: left;">
+                            Oii Gaby, você fez um ótimo trabalho! Só você sabe o quão difícil foi aguentar esse semestre. Foi vivendo a base de "só mais um pouquinho" e muita, mas muita luta e determinação. Você voou esse ano, mas talvez seja hora de desacelerar! Você foi incrível, sua nota é só uma parte dessa consequência kkkkk 
+                        </div>
+                
+                        <!-- Rodapé Modal -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger text-black" data-bs-dismiss="modal">Parabéns pelo 10 de novo haha 🥰🤩</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+
+    </div>
+
+        </div>
+
+        <div id="menu1" class="container tab-pane fade mb-4"> <!-- carrossel -->
+            <br>
+            <h3 style="background-color: blueviolet; margin-bottom: 15px; border-radius: 10px; color: beige;">Fotinhas </h3> <!-- carrossel -->        
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores/pontos -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="9"></button>
+
+            </div>
+            <!-- O slideshow/carousel -->
+            <div class="carousel-inner p-3" style="box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <img src="imagens_hobbies/71f09a50-98fc-47f5-b0e7-9d49dec91ee6.jpg" alt="robótica_2023" class="d-block w-50">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <img src="imagens_hobbies/formatura.jpg" alt="São Paulo" alt="formatura" class="d-block" style="size: 30%;">
+                    </div>
+                </div>         
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <img src="imagens_hobbies/formatura2.jpg" alt="vestidoFormatura" class="d-block w-50">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <img src="imagens_hobbies/formatura3.jpg" alt="fotoFormaturacomProfessora" class="d-block w-50">
+                    </div>
+                </div> 
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <img src="imagens_hobbies/formatura4.jpg" class="d-block w-50">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <img src="q_le.jpg" alt="São Paulo" class="d-block w-50">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <img src="q_manu.jpg" alt="São Paulo" class="d-block w-50">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <img src="fcdec841-496e-499e-9ca8-eb33e962f263.jpg" alt="São Paulo" class="d-block w-50">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <img src="609f8742-1e7d-417d-b130-35bd1cb1929d.jpg" alt="São Paulo" class="d-block w-50">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <img src="q_gabypraia (2).jpg" alt="São Paulo" class="d-block w-50">
+                    </div>
+                </div>
+            </div>
+            <!-- Controles de esquerda e direita -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo"
+            data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <script>
+
+function alert_detalhes() { alert('oiie')}
+
+function bom_gosto(){ alert('hehe, você tem bom gosto 😜') }
+
+{ //tema}
+var num = 0;
+document.body.style.backgroundColor = '#272822';
+document.body.style.color = 'beige'; // Texto preto
+function alternarTema() {
+    var botao = document.getElementById('tema');
+    num += 1;
+    
+    if (num % 2 === 0) { //virou par, ent deve ser preto
+        botao.innerHTML = '🔘 Tema claro';
+        document.body.style.backgroundColor = '#272822';
+        document.body.style.color = 'beige';
+    } else {
+        botao.innerHTML = '🔘 Tema escuro';// virou impar, ent deve ser branco
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = '#272822';
+    }
+}
+}
+
+{ //escalas
+{
+let meuBotao = document.getElementById('fa_maior');
+let caixaTexto = document.getElementById('caixaTextoF');
+
+meuBotao.addEventListener('mouseover', function() {
+caixaTexto.style.display = 'block';
+});
+
+meuBotao.addEventListener('mouseout', function() {
+    caixaTexto.style.display = 'none';
+});
+}
+
+//sib_menor
+{
+let meuBotao = document.getElementById('sib_maior');
+let caixaTexto = document.getElementById('caixaTextoB');
+
+meuBotao.addEventListener('mouseover', function() {
+caixaTexto.style.display = 'block';
+});
+
+meuBotao.addEventListener('mouseout', function() {
+    caixaTexto.style.display = 'none';
+});
+}
+
+//mib_maior
+{
+let meuBotao = document.getElementById('mib_maior');
+let caixaTexto = document.getElementById('caixaTextoE');
+
+meuBotao.addEventListener('mouseover', function() {
+caixaTexto.style.display = 'block';
+});
+
+meuBotao.addEventListener('mouseout', function() {
+    caixaTexto.style.display = 'none';
+});
+}
+
+//lab_maior
+{
+let meuBotao = document.getElementById('lab_maior');
+let caixaTexto = document.getElementById('caixaTextoA');
+
+meuBotao.addEventListener('mouseover', function() {
+caixaTexto.style.display = 'block';
+});
+
+meuBotao.addEventListener('mouseout', function() {
+    caixaTexto.style.display = 'none';
+});
+}
+
+//reb_maior
+{
+let meuBotao = document.getElementById('reb_maior');
+let caixaTexto = document.getElementById('caixaTextoD');
+
+meuBotao.addEventListener('mouseover', function() {
+caixaTexto.style.display = 'block';
+});
+
+meuBotao.addEventListener('mouseout', function() {
+    caixaTexto.style.display = 'none';
+});
+}
+
+//solb_maior
+{
+let meuBotao = document.getElementById('solb_maior');
+let caixaTexto = document.getElementById('caixaTextoG');
+
+meuBotao.addEventListener('mouseover', function() {
+caixaTexto.style.display = 'block';
+});
+
+meuBotao.addEventListener('mouseout', function() {
+    caixaTexto.style.display = 'none';
+});
+}
+}
+
+
+        </script>
+
+</body>
+</html>
